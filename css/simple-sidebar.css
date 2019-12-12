@@ -1,0 +1,118 @@
+@import url('https://rsms.me/inter/inter.css'); 
+
+html { font-family: 'Inter', sans-serif; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  height: 8.125rem;
+}
+
+/*#sidebar-wrapper .list-group {
+  width: 17rem;
+}*/
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.list-border{
+  border-left: 0;
+  border-right: 0;
+}
+
+div.sidebar-footer{
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+}
+
+.logo{
+  width: 5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.list-group-item{
+  padding:.25rem 0.625rem;
+}
+
+.topbar{
+  position: relative;
+  height: 80px;
+  font-size: 20px;
+  font-weight: 500;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #dee2e6!important;
+  background-color: #f8f9fa!important;
+}
+.topbarbelow{
+  position: relative;
+  height: 60px;
+  font-size: 16px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6!important;
+  background-color: #f8f9fa!important;
+}
+
+.olist{
+font-size: 14px;
+line-height: 30px;
+}
+
+.ulist{
+  list-style-type: disc;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+    width:220px;
+    font-weight: 500;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
